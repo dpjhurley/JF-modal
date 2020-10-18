@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Air Fryer XL - 3.2 Litre Digital Air Fryer</title>
+    <link rel="stylesheet" href="./css/index.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet"> 
+ 
+</head>
+<body>
+    <div class="product">
+        <div class="product__image">
+            <img src="./img/powerairfryer-3.214_1.jpg" alt="">
+        </div>
+        <div class="product__info">
+            <p class="inStock">In Stock</p>
+            <form action="" class="toBasket">
+                <label>Color
+                    <select name="color">
+                        <option value="blue">black</option>
+                        <option value="blue">red</option>
+                        <option value="blue">blue</option>
+                    </select>
+                </label>
+                <label>quantity
+                    <input type="number" name="quantity" >
+                </label>
+                <input type="button" value="Add to bag" class="toBasketBtn">
+            </form>          
+            <!-- If there is no stock then we display this div below and disable to ad to basket button, plus if you press the add
+            to basket it will mak the modal pop up aswell -->
+            <button class="emailBtn">Sign up for stock alerts</button>
+        </div>
+    </div>
+
+    <div class="backdrop">
+        <div class="modal">
+            <div class="modal__content">
+                <p class="modal__content--title">Sign up for our stock alert!</p>
+                <span class="modal__content--closeBtn">&#x2716</span>
+            </div>
+            <form class="modal__input">
+                <input class="modal__input--address" type="text" placeholder="johnDoe@email.com" >
+                <input class="modal__input--submitBtn" type="submit" value="Enter your email address" disabled="disabled">
+            </form>
+        </div>
+    </div>
+
+    <!-- <script src="./js/stock.js"></script> -->
+    <script src="./js/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+.product {
+    display: flex;
+}
+
+.toBasket {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: left;
+}
+
+.emailBtn {
+    cursor: pointer;
+    background-color: rgb(182, 189, 0);
+    border: none;
+    color: white;
+    padding: 15px 16px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.3rem;
+    transition: 400ms;
+    outline: none;
+
+    &:hover {
+        background-color: rgb(159, 165, 0);
+        color: rgb(190, 190, 190);
+    }
+}

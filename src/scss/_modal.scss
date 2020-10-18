@@ -1,0 +1,83 @@
+.backdrop {
+    background-color: rgba(0,0,0,0.4);
+    // display: flex; for testing the modal
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.modal {
+    background-color: rgb(65, 65, 65);
+    padding: 3rem;
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.4);
+    width: 40%;
+    border-radius: 0.3rem;
+    animation-name: modalOpen;
+    animation-duration: 400ms;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    
+        &--title {
+            color: white;
+            font-size: 1.2rem;
+        }
+    
+        &--closeBtn {
+            cursor: pointer;
+            font-weight: bold;
+            color: white;
+        }
+    }
+
+    &__input {
+        margin-top: 1rem;
+        justify-self: center;
+        display: flex;
+        justify-content: space-around;
+        
+        &--address {
+            border: none;
+            width: -webkit-fill-available;
+            font: inherit;
+            font-weight: bold;
+            background-color: grey;
+            outline: none;
+
+            &::placeholder {
+                color: darkgray;
+            }
+        }
+
+        &--submitBtn {
+            cursor: pointer;
+            background-color: rgb(182, 189, 0);
+            border: none;
+            color: white;
+            padding: 15px 16px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.3rem;
+            transition: 400ms;
+
+            &:hover {
+                background-color: rgb(159, 165, 0);
+                color: rgb(190, 190, 190);
+            }
+        }
+    }
+
+    
+}
+
+@keyframes modalOpen {
+    from { opacity: 0}
+    to { opacity: 1 }
+}
